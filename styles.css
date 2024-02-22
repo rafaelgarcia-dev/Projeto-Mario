@@ -1,0 +1,178 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.Logo-image{
+    height: 200px;
+}
+
+.image-mario{
+    height: 400px;
+}
+
+button{
+    color: white;
+    background-color: #c51111;
+    border-radius: 3px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight:bold;
+    margin-top: 20px;
+}
+button:hover{
+    background-color: rgb(13, 13, 156);
+    transition: 0.4s ease-in-out;
+}
+
+
+body{
+    height: 100vh;
+}
+
+.caixa-mae{
+    display: flex;
+    height: 100vh;                           /*so usa justify e align quando o elemento é display flex*/
+    justify-content: space-around;
+    align-items: center;
+}
+
+.caixa-principal{
+    width: 35%;
+}
+
+p{
+    color: #ffffff;
+}
+
+.caixa-video{
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+video{
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0%;
+}
+.mascara{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    position: fixed;
+    top: 0;
+}
+
+.link-zap img{
+    height: 50px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    
+    
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 20px;
+    
+}
+.header img{
+    height: 60px;
+}
+
+.header a{
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    
+}
+
+a:hover{
+    color: #c51111;
+    font-size: 30px;
+    transition: 0.3s  ease-in-out;
+}
+
+.Formulario{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    padding: 15px;
+    gap: 20px;
+    border-radius: 20px;
+    top: 30%;
+    left: -290px;
+    transition: left 1s ease-in-out;
+}
+
+input{
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    outline-color: rgb(17, 110, 24);
+}
+
+textarea{
+    height: 100px;
+    width: 270px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    outline-color: rgb(17, 110, 24);
+}
+
+ .mascara-formulario{
+    visibility: hidden;
+    position: fixed;
+    top: 0%;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(100deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85% );
+    
+}   
+
+@media(max-width:1000px){
+    p{
+        display: none;
+    }
+    .caixa-mae{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .caixa-principal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-mario{
+        width: 80vw;
+        height: auto;
+    }
+
+    .header{
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header a{
+        font-size: 20px;
+    }
+
+    .header img{
+        display: none;
+    }
+}
